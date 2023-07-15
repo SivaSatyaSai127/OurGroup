@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:15px 30px;
+            padding:8px;
+        }
+        input[type="submit"]{
+            margin-top:10px;
+        }
+        .s{
+            margin-top: 3%;
+            border:10px solid grey;
+            height:200px;
+        }
+        select,input{
+            margin-left: 40%;
+        }
+        .siva1{
+            border:20px solid blue;
+            border-radius: 2px;
+            background-color: blue;
+            overflow: hidden;
+        }
+        .siva1 a{
+            color:white;
+            padding:90px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .siva1 a:hover{
+            background-color: white;
+            color:orange;
+            cursor: grab;
+        }
+        p{
+            color:white;
+            border:1px solid green;
+            background-color: green;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="siva1">
+        <a href="home.html">Home</a>
+        <a href="account.html">Account</a>
+        <a href="chat.html">Chat</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+    <div class="s">
+    <p><marquee>Please select with who you want to chat</marquee></p>
+    <select ONCHANGE="location = this.options[this.selectedIndex].value;">
+        <option value="">__Select Option__</option>
+        <option value="group.html">Group</option>
+        <option value="siva.html">Siva Satya Sai</option>
+        <option value="sreeram.html">Sreeram Kandukuri</option>
+        <option value="pragathi.html">Pragathi Yarramaneni</option>
+        <option value="poojitha.html">Poojitha Kolli</option>
+    </select><br>
+    <input type="submit" value="Submit">
+    </div>
+
+</body>
+</html>
