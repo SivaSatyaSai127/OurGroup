@@ -26,7 +26,28 @@
             border:2px solid orange;
             margin-top: 2%;
             margin-bottom: 0%;
+            margin-left: 1%;
             height:500px;
+        }
+        #satya1{
+            border:5px solid gray;
+            height:200px;
+            width:300px;
+            margin-top: 13%;
+            margin-left:36%;
+            margin-right:5%;
+        }
+        label,input{
+            margin-top:7%;
+            margin-left:5%;
+        }
+        input[type="button"]{
+            margin-top:10%;
+            margin-left: 40%;
+        }
+        marquee{
+            margin-top: 1%;
+            background-color: aqua;
         }
     </style>
 </head>
@@ -39,6 +60,15 @@
         <a href="signup.html">Sign Up</a>
     </div>
     <div id="satya">
+        <div id="satya1">
+            <marquee>Please fill the details correctly</marquee>
+            <label style="color:mediumblue">Email*</label>
+            <input type="text" placeholder="siva@gmail.com" name="email" id="email" required><br>
+            <label style="color:crimson">Password*</label>
+            <input type="password" placeholder="create password" name="password" id="password" required>
+            <input type="button" value="Submit" id="login" onclick="alert('Login Successfull')">
+        </div>
+
 
     </div>
 </body>
